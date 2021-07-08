@@ -1,3 +1,10 @@
+html {
+    height: 100%;
+    font-size: 1vw;
+    padding: 0;
+    margin: 0;
+}
+
 body {
     background: rgb(236, 236, 236);
     padding: 5px;
@@ -7,37 +14,42 @@ body {
 /* "Header" of both CV's */
 
 .container {
-    display: inline-block;
+    background: rgb(236, 236, 236);
+    border-bottom: 3px solid orange;
+    display: flex;
+    justify-content: space-between;
     position: sticky;
     top: 0;
     width: 100%;
-    background: rgb(236, 236, 236);
-    border-bottom: 3px solid orange;
-    font-size: 24px;
+    height: 36vh;
 }
 
-    .image {
-        width: 250px;
-        height: 250px;
+    .profile {
+        display: flex;
+        align-items: center;
+    }
+
+    .image img {
+        width: auto;
+        max-height: 30vh;
     }
 
     .name {
-        position: absolute;
-        top: 70px;
-        left: 250px;
         line-height: 80%;
+        width: auto;
+        font-size-adjust: 30vh;
     }
 
     .contacts {
-        position: absolute;
-        right: 0px;
-        bottom: 100px;
+        align-self: center;
+        max-width: 100%;
+        max-height: 100%;
     }
 
 /* "Main" of both CV's */
 
 .content {
-    font-size: 24px;
+    font-size: 2vw 2vh;
     width: 100%;
 }
 
@@ -51,7 +63,7 @@ body {
 
     .content .theme {
         display: inline-block;
-        padding-top: 10px;
+        padding-top: 1%;
         height: 100%;
         width: 75%;
         text-align: left;
