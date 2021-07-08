@@ -1,99 +1,72 @@
 body {
     background: rgb(236, 236, 236);
     padding: 5px;
+    padding: 5px 50px 5px;
 }
+
+/* "Header" of both CV's */
 
 .container {
-    display: inline;
-}
-
-.image {
-    width: 15%;
-    float: left;
-}
-
-.name {
-    width: 25%;
-    line-height: 50%;
-    padding-top: 80px;
-}
-.name p {
+    display: inline-block;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: rgb(236, 236, 236);
+    border-bottom: 3px solid orange;
     font-size: 24px;
 }
 
-.contacts {
-    text-align: right;
-}
+    .image {
+        width: 250px;
+        height: 250px;
+    }
+
+    .name {
+        position: absolute;
+        top: 70px;
+        left: 250px;
+        line-height: 80%;
+    }
+
+    .contacts {
+        position: absolute;
+        right: 0px;
+        bottom: 100px;
+    }
+
+/* "Main" of both CV's */
 
 .content {
-    display: inline-block;
-    padding-right: 40px;
-    font-size: 20px;
-}
-
-.content> h2:first-of-type {
-    height: 180px;
-}
-
-.content section:nth-of-type(2) h2 {
-    height: 700px;
-}
-
-.cv2 .content section:nth-of-type(2) h2 {
-    height: 350px;
-}
-
-.cv1 .content section:nth-of-type(3) h2 {
-    height: 70px;
-}
-
-.cv2 .content section:nth-of-type(3) h2 {
-    height: 800px;
-}
-
-.cv1 .content section:nth-of-type(4) h2 {
-    height: 350px;
-}
-
-.cv2 .content section:nth-of-type(4) h2 {
-    height: 200px;
-}
-
-.content span {
-    text-align: left;
-}
-
-
-hr:not(.main_hr) {
-    width: 95%;
-    color: orange;
-}
-
-.content {
-    display: inline-block;
-}
-
-.content .text {
-    padding-top: 10px;
-}
-
-.content h2 {
-    padding-left: 40px;
-    width: 15%;
-    float: left;
-    color: orange;
-}
-
-.content section {
+    font-size: 24px;
     width: 100%;
 }
 
-.skills {
-    width: 80%;
-}
+    .content h2 {
+        display: inline-block;
+        height: 100%;
+        width: 18%;
+        vertical-align: top;
+        color: orange;
+    }
 
-.cv2 .theme ul {
-    max-width: 250px;
-    margin-right: auto;
-    margin-left: auto;
-}
+    .content .theme {
+        display: inline-block;
+        padding-top: 10px;
+        height: 100%;
+        width: 75%;
+        text-align: left;
+    }
+
+    .content .theme span {
+        height: 100%;
+    }
+
+    .content .skills tr td {
+        margin-left: auto;
+        margin-right: auto;
+        width: 400px;
+    }
+
+    .content .skills ul {
+        display: inline-block;
+    }
