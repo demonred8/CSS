@@ -24,27 +24,27 @@ body {
     height: 36vh;
 }
 
-    .profile {
-        display: flex;
-        align-items: center;
-    }
+.profile {
+    display: flex;
+    align-items: center;
+}
 
-    .image img {
-        width: auto;
-        max-height: 30vh;
-    }
+.image img {
+    width: auto;
+    max-height: 30vh;
+}
 
-    .name {
-        line-height: 80%;
-        width: auto;
-        font-size-adjust: 30vh;
-    }
+.name {
+    line-height: 80%;
+    width: auto;
+    font-size-adjust: 30vh;
+}
 
-    .contacts {
-        align-self: center;
-        max-width: 100%;
-        max-height: 100%;
-    }
+.contacts {
+    align-self: center;
+    max-width: 100%;
+    max-height: 100%;
+}
 
 /* "Main" of both CV's */
 
@@ -53,32 +53,32 @@ body {
     width: 100%;
 }
 
-    .content h2 {
-        display: inline-block;
-        height: 100%;
-        width: 18%;
-        vertical-align: top;
-        color: orange;
-    }
+.content h2 {
+    display: inline-block;
+    height: 100%;
+    width: 18%;
+    vertical-align: top;
+    color: orange;
+}
 
-    .content .theme {
-        display: inline-block;
-        padding-top: 1%;
-        height: 100%;
-        width: 75%;
-        text-align: left;
-    }
+.content .theme {
+    display: inline-block;
+    padding-top: 1%;
+    height: 100%;
+    width: 75%;
+    text-align: left;
+}
 
-    .content .theme span {
-        height: 100%;
-    }
+.content .theme span {
+    height: 100%;
+}
 
-    .content .skills tr td {
-        margin-left: auto;
-        margin-right: auto;
-        width: 400px;
-    }
+.content .skills tr td {
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+}
 
-    .content .skills ul {
-        display: inline-block;
-    }
+.content .skills ul {
+    display: inline-block;
+}
