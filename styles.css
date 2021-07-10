@@ -37,7 +37,6 @@ body {
 .name {
     line-height: 80%;
     width: auto;
-    font-size-adjust: 30vh;
 }
 
 .contacts {
@@ -54,12 +53,13 @@ body {
     z-index: 4;
 }
 
-/* "Main" of both CV's */
+/* "Main" of both CV's hr, li, ul, table, tr, td */
 
-.content *:not(hr, li, ul, table, tr, td) {
+.content *:not(hr) :not(li) :not(ul) :not(table) :not(tr) :not(td) {
     display: flex;
     flex-wrap: wrap;
-    font-size: 2vw 2vh;
+    font-size: 2vw;
+    font-size: 2vh;
     width: 100%;
 }
 
