@@ -46,17 +46,29 @@ body {
     max-height: 100%;
 }
 
+.cv1 .container {
+    z-index: 4;
+}
+
+.cv2 .container {
+    z-index: 4;
+}
+
 /* "Main" of both CV's */
 
-.content {
+.content *:not(hr, li, ul, table, tr, td) {
+    display: flex;
+    flex-wrap: wrap;
     font-size: 2vw 2vh;
     width: 100%;
 }
 
 .content h2 {
-    display: inline-block;
+    display: inline-flex;
     height: 100%;
     width: 18%;
+    position: sticky;
+    top: 40vh;
     vertical-align: top;
     color: orange;
 }
@@ -73,12 +85,54 @@ body {
     height: 100%;
 }
 
-.content .skills tr td {
+.content .profile, .work, .keyskills, .studying {
+    background: rgb(236, 236, 236);
+}
+
+/* CV1 */
+
+.cv1 .content tr td {
     margin-left: auto;
     margin-right: auto;
     width: 400px;
 }
 
-.content .skills ul {
-    display: inline-block;
+.cv1 .content .profile {
+    z-index: 0;
+}
+
+.cv1 .content .work {
+    z-index: 1;
+}
+
+.cv1 .content .keyskills {
+    z-index: 2;
+}
+
+.cv1 .content .studying {
+    z-index: 3;
+}
+
+/* CV2 */
+
+.cv2 .content .skills {
+    display: flex;
+    margin: 0 auto 0 auto;
+    width: 400px;
+}
+
+.cv2 .content .profile {
+    z-index: 0;
+}
+
+.cv2 .content .studying {
+    z-index: 1;
+}
+
+.cv2 .content .work {
+    z-index: 2;
+}
+
+.cv2 .content .keyskills {
+    z-index: 3;
 }
