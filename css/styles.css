@@ -7,23 +7,26 @@ body{
 }
 
 .container{
-    display:flex;
+    display: flex;
     flex-direction: row;
-    justify-items: space-between;
-    align-items: center;
+    justify-content: space-between;
+    flex-basis: 100%;
     width: 90%;
     margin: 0 auto 0 auto;
 }
 
+[class*="card"] .container{
+    padding: 10%;
+}
+
 .text{
-    padding: 5% 0 10% 10%;
-    display:flex;
+    display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    justify-content: space-between;
 }
 
 .content1{
-    line-height: 1.5em;
+    line-height: 2em;
     margin: 0%;
 }
 
@@ -35,22 +38,26 @@ body{
     margin: auto;
 }
 
+.icon{
+    align-self: flex-start;
+}
+
 .card1 .icon::after {
     font-family: 'Font Awesome\ 5 Free';
     content: '\f201';
     font-weight: 900;
     font-size: 2em;
     display: block;
-    margin: 50px;
+    margin: 0;
 }
 
 .card2 .icon::after {
     font-family: 'Font Awesome\ 5 Free';
     content: '\f249';
-    font-weight: 1500;
+    font-weight: 900;
     font-size: 2em;
     display: block;
-    margin: 50px;
+    margin: 0;
 }
 
 .card3 .icon::after {
@@ -59,7 +66,7 @@ body{
     font-weight: 900;
     font-size: 2em;
     display: block;
-    margin: 50px;
+    margin: 0;
 }
 
 
