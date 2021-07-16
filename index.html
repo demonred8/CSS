@@ -11,8 +11,8 @@
 </head>
 
 <body>
-    <article class="container">
-        <section class="header">
+    <div class="container">
+        <div class="header">
             <div class="text">
                 <h1>John Doe</h1>
                 <p class="speciality">Marketing Executive</p>
@@ -26,13 +26,89 @@
                 </p>
             </div>
             <div class="image">
-                <img class="portrait" src="images/photo.jpeg">
+                <img class="portrait" src="images/photo.jpeg" alt="Photo portrait">
             </div>
-        </section>
-        <section class="contacts">
-            <a mailto="john.doe@gmail.com">john.doe@gmail.com</a>
-        </section>
-    </article>
+        </div>
+        <div class="contacts">
+            <div class="contactsgroup">
+                <a href="mailto:john.doe@gmail.com">johndoe@gmail.com</a>
+                <a href="map">New York, USA</a>
+                <a href="linkedin.com/in/john.doe">linkedin.com/in/john.doe</a>
+            </div>
+            <div class="contactsgroup">
+                <a href="tel:202-555-0166">202-555-0166</a>
+                <a href="john-blog.com">john-blog.com</a>
+                <a href="@john.doe">@john.doe</a>
+            </div>
+        </div>
+        <div class="main">
+            <div class="theme">
+                <div class="article">
+                    <h2>AREAS OF EXPERTISE</h2>
+                </div>
+                <div class="content">
+                    <span>
+                        Business Process Improvement
+                    </span>
+                    <span>
+                        Lead Generation
+                    </span>
+                    <span>
+                        Product-Market Fit
+                    </span>
+                    <span>
+                        Social Media Marketing
+                    </span>
+                    <span>
+                        Email Marketing
+                    </span>
+                    <span>
+                        Communications & PR
+                    </span>
+                    <span>
+                        Influential Negotiation Skills
+                    </span>
+                    <span>
+                        Supervision & Leadership
+                    </span>
+                    <span>
+                        Prototyping & Product Design
+                    </span>
+                    <span>
+                        Development & Training
+                    </span>
+                    <span>
+                        Project Management
+                    </span>
+                    <span>
+                        Interpersonal Communication Skills
+                    </span>
+                    <span>
+                        Product & Market Research
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Initialize and add the map
+        function initMap() {
+            // The location of Uluru
+            const uluru = { lat: -25.344, lng: 131.036 };
+            // The map, centered at Uluru
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 4,
+                center: uluru,
+            });
+            // The marker, positioned at Uluru
+            const marker = new google.maps.Marker({
+                position: uluru,
+                map: map,
+            });
+        }
+    </script>
+
 </body>
 
 </html>
