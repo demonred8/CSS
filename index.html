@@ -12,10 +12,10 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="shadow">
-            <div class="header">
-                <div class="text">
+    <div class="container flex">
+        <div class="shadow box">
+            <div class="header flex">
+                <div class="text flex">
                     <h1>John Doe</h1>
                     <p class="speciality">Marketing Executive</p>
                     <span>Agile, results-oriented marketer with 9+ years of management experience in providing
@@ -29,72 +29,73 @@
                         revenues and 700k+ views and instagram content that increased 50K+ followers.
                     </span>
                 </div>
-                <div class="image">
+                <div class="image flex">
                     <img class="portrait" src="images/photo.jpeg" alt="Photo portrait" width="250px" height="250px">
                 </div>
             </div>
-            <div class="contacts">
-                <div class="contactsgroup">
-                    <a class="mail" href="mailto:john.doe@gmail.com" target="_blank">johndoe@gmail.com</a>
-                    <a class="map" href="map" target="_blank">New York, USA</a>
-                    <a class="linkedin" href="https://www.linkedin.com/in/john.doe"
+            <div class="contacts flex">
+                <div class="contactsgroup flex">
+                    <a class="mail fontawesome" href="mailto:john.doe@gmail.com" target="_blank">johndoe@gmail.com</a>
+                    <a class="map fontawesome" href="map" target="_blank">New York, USA</a>
+                    <a class="linkedin fontawesome" href="https://www.linkedin.com/in/john.doe"
                         target="_blank">linkedin.com/in/john.doe</a>
                 </div>
-                <div class="contactsgroup">
-                    <a class="tel" href="tel:202-555-0166" target="_blank">202-555-0166</a>
-                    <a class="site" href="https://www.john-blog.com" target="_blank">john-blog.com</a>
-                    <a class="twitter" href="https://www.twitter.com/@john.doe" target="_blank">@john.doe</a>
+                <div class="contactsgroup flex">
+                    <a class="tel fontawesome" href="tel:202-555-0166" target="_blank">202-555-0166</a>
+                    <a class="site fontawesome" href="https://www.john-blog.com" target="_blank">john-blog.com</a>
+                    <a class="twitter fontawesome" href="https://www.twitter.com/@john.doe"
+                        target="_blank">@john.doe</a>
                 </div>
             </div>
         </div>
         <div class="main">
-            <div class="theme">
+            <div class="theme flex shadow">
                 <div id="article">
                     <h2>AREAS OF EXPERTISE</h2>
                 </div>
-                <div class="content">
-                    <span>
+                <div class="content flex">
+                    <span class="skills shadow">
                         Business Process Improvement
                     </span>
-                    <span>
+                    <span class="skills shadow">
                         Lead Generation
                     </span>
-                    <span>
+                    <span class="skills shadow">
                         Product-Market Fit
                     </span>
-                    <span>
+                    <span class="skills shadow">
                         Social Media Marketing
                     </span>
-                    <span>
+                    <span class="skills shadow">
                         Email Marketing
                     </span>
-                    <span>
+                    <span class="skills shadow">
                         Communications & PR
                     </span>
-                    <span>
+                    <span class="skills shadow">
                         Influential Negotiation Skills
                     </span>
-                    <span>
+                    <span class="skills shadow">
                         Supervision & Leadership
                     </span>
-                    <span>
+                    <span class="skills shadow">
                         Prototyping & Product Design
                     </span>
-                    <span>
+                    <span class="skills shadow">
                         Development & Training
                     </span>
-                    <span>
+                    <span class="skills shadow">
                         Project Management
                     </span>
-                    <span>
+                    <span class="skills shadow">
                         Interpersonal Communication Skills
                     </span>
-                    <span>
+                    <span class="skills shadow">
                         Product & Market Research
                     </span>
                 </div>
             </div>
-            <div class="theme">
+            <div class="theme flex shadow">
                 <div id="article">
                     <h2>PROFESSIONAL EXPERIENCE</h2>
                 </div>
@@ -104,8 +105,8 @@
                         <p>Cabalsa Digital Marketing Consultancy</p>
                     </div>
                     <div class="subarticle">
-                        <i>
-                            <span class="datecity">
+                        <i class="subcontent flex">
+                            <span class="datecity flex">
                                 <p>06/2017 - 05/2020</p>
                                 <p>Garden City, NY</p>
                             </span>
@@ -113,7 +114,7 @@
                         </i>
                     </div>
                     <div class="content">
-                        <ul>
+                        <ul class="list">
                             <li>
                                 Led the development of visual messages from conceptualization to finalization of
                                 marketing and business development collaterals such as pitch decks, publications,
@@ -140,18 +141,18 @@
                     </div>
                 </div>
             </div>
-            <div class="theme">
+            <div class="theme flex shadow">
                 <div id="article">
                     <h2>PROFESSIONAL EXPERIENCE</h2>
                 </div>
-                <div class="content">
+                <div class="content flex">
                     <div class="article">
                         <h3>Digital Marketing Executive</h3>
                         <p>Cabalsa Digital Marketing Consultancy</p>
                     </div>
                     <div class="subarticle">
-                        <i>
-                            <span class="datecity">
+                        <i class="subcontent flex">
+                            <span class="datecity flex">
                                 <p>06/2017 - 05/2020</p>
                                 <p>Garden City, NY</p>
                             </span>
@@ -159,7 +160,7 @@
                         </i>
                     </div>
                     <div class="content">
-                        <ul>
+                        <ul class="list">
                             <li>
                                 Led the development of visual messages from conceptualization to finalization of
                                 marketing and business development collaterals such as pitch decks, publications,
@@ -188,25 +189,6 @@
             </div>
         </div>
     </div>
-
-    <script>
-        // Initialize and add the map
-        function initMap() {
-            // The location of Uluru
-            const uluru = { lat: -25.344, lng: 131.036 };
-            // The map, centered at Uluru
-            const map = new google.maps.Map(document.getElementById("map"), {
-                zoom: 4,
-                center: uluru,
-            });
-            // The marker, positioned at Uluru
-            const marker = new google.maps.Marker({
-                position: uluru,
-                map: map,
-            });
-        }
-    </script>
-
 </body>
 
 </html>
