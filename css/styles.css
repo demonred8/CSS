@@ -25,17 +25,17 @@ body {
     display: flex;
 }
 
-/* "Header" */
 .shadow {
     box-shadow: 0px 5px 10px 2px var(--box-shadow-color);
 }
 
-.shadow.box {
+/* "Header" */
+.header.shadow.box {
     margin: var(--base-margin);
     border-radius: 1em;
 }
 
-.header {
+.header.top {
     background: var(--header-main-color);
     border-radius: 1em 1em 0em 0em;
     flex-direction: row;
@@ -208,13 +208,13 @@ body {
 
 /* Media */
 @media (max-width: 850px) {
-    .header {
-        flex-direction: column;
-        padding: 25px;
+    .header.shadow.box {
+        margin: 25px;
     }
 
-    .shadow.box {
-        margin: 25px;
+    .header.top.flex {
+        flex-direction: column;
+        padding: 25px;
     }
 
     .text {
