@@ -4,7 +4,6 @@
 
 body {
     height: 100vh;
-    overflow: hidden;
 }
 
 header {
@@ -12,6 +11,7 @@ header {
     height: var(--header-height);
     flex-basis: 100%;
     background-color: aqua;
+    overflow: hidden;
 }
 
 main {
@@ -25,6 +25,7 @@ main {
 .quad {
     width: 50%;
     height: 50%;
+    overflow: hidden;
 }
 
 span {
