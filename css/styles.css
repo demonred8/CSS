@@ -1,268 +1,37 @@
-/* Variables */
-:root {
-    --body-bg-color: rgb(223, 223, 223);
-    --header-main-color: rgb(5, 43, 61);
-    --header-contact-color: rgb(6, 27, 36);
-    --main-theme-color: rgb(189, 189, 189);
-    --theme-main-color: rgb(71, 89, 124);
-    --box-shadow-color: rgba(34, 60, 80, 0.5);
-    --base-margin: 50px;
-    --base-padding: 50px;
-}
-
-/* Body */
 body {
-    background: var(--body-bg-color);
-    height:100vh;
-    min-width: 350px;
+    height: 100vh;
+    overflow: hidden;
 }
 
-.container {
-    flex-direction: column;
+header {
+    height: 30px;
+    background-color: aqua;
 }
 
-.flex {
+main {
     display: flex;
+    flex-wrap: wrap;
 }
 
-.shadow {
-    box-shadow: 0px 5px 10px 2px var(--box-shadow-color);
+.quad {
+    width: 50vw;
+    height: 50vh;
 }
 
-/* "Header" */
-.header.shadow.box {
-    margin: var(--base-margin);
-    border-radius: 1em;
+.box1 {
+    background-color: red;
 }
 
-.header.top {
-    background: var(--header-main-color);
-    border-radius: 1em 1em 0em 0em;
-    flex-direction: row;
-    padding: var(--base-padding);
+.box2 {
+    background-color: yellow;
 }
 
-/* Text */
-.text {
-    font-size: 1.5rem;
-    color: white;
-    flex-direction: column;
-    justify-content: space-around;
-    flex: 1 1 100%;
+.box3 {
+    background-color: green;
 }
 
-.text h1 {
-    font-size: 1.5em;
+.box4 {
+    background-color: purple;
 }
 
-.speciality {
-    font-size: 1.3em;
-}
 
-.text * {
-    margin: 0;
-}
-
-/* Image */
-.image {
-    justify-content: flex-end;
-    margin-left: 25px;
-}
-
-.portrait {
-    border: 5px solid gray;
-    border-radius: 10%;
-}
-
-/* Contacts */
-.contacts {
-    background: var(--header-contact-color);
-    flex-direction: row;
-    margin: 0px;
-    padding: 25px 50px;
-    border-radius: 0em 0em 1em 1em;
-}
-
-.contactsgroup {
-    flex-direction: column;
-    justify-content: space-around;
-    flex-basis: 50%;
-}
-
-.contacts a {
-    width: fit-content;
-    margin: 5px 0px;
-    color: white;
-}
-
-/* Font Awesome icons */
-.fontawesome::before {
-    font-family: 'Font Awesome\ 5 Free';   
-    font-weight: 900;
-    font-size: 1em;
-    margin-right: 10px;
-}
-
-.mail::before {
-    content: '\f0e0';
-} 
-
-.map::before {
-    content: '\f3c5';
-}
-
-.linkedin::before {
-    content: '\f0e1';
-}
-
-.tel::before {
-    content: '\f3cd';
-}
-
-.site::before {
-    content: '\f0ac';
-}
-
-.twitter::before {
-    content: '\f781';    
-}
-
-/* Main */
-/* First Theme */
-.theme {
-    font-size: 1rem;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: var(--base-padding);
-    margin: var(--base-margin);
-    border-radius: 1em;
-    background: var(--main-theme-color);
-    height: fit-content;
-}
-
-.main.article {
-    color: var(--theme-main-color);
-    width: fit-content;
-    top: 10%;
-}
-
-.main.article h2 {
-    border-bottom: 0.2rem solid var(--theme-main-color);
-    margin: 0%;
-}
-
-.content {
-    flex-wrap: wrap; 
-}
-
-.skills {
-    font-size: 1.2rem;
-    background:var(--theme-main-color);
-    color: white;
-    border-radius: 0.5em;
-    margin: 15px;
-    padding: 15px;
-}
-
-/* Second Theme */
-.theme:first-of-type ~ .theme .content {
-    flex-direction: column;
-}
-
-.content.article {
-    margin: 15px 0px 0px 0px;
-}
-
-.content.article *, .subarticle * {
-    margin: 0%;
-}
-
-.subcontent {
-    flex-direction: column;
-    font-size: 0.9rem;
-}
-
-.datecity {
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 10px 0px;
-}
-
-.cursive {
-    font-style: italic;
-}
-
-.list {
-    list-style: disc;
-    margin-bottom: 25px; 
-    padding-left: 20px;
-}
-
-.list li {
-    margin: 5px 0px;
-}
-
-.list li::marker {
-    color: var(--theme-main-color);
-}
-
-/* Media */
-@media (max-width: 850px) {
-    .header.shadow.box {
-        margin: 25px;
-    }
-
-    .header.top.flex {
-        flex-direction: column;
-        padding: 25px;
-    }
-
-    .text {
-        align-items: center;
-        text-align: center;
-    }
-
-
-    .image {
-        justify-content: center;
-        align-items: center;
-        order: -1;
-        margin-bottom: 25px;
-        margin-left: 0px;
-        min-width: 100%;
-    }
-
-    .contacts {
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .contactsgroup {
-        align-items: center;
-    }
-
-    .theme {
-        padding: 10px;
-        margin: 25px;
-        align-items: center;
-    }
-
-    .main.article {
-        align-self: center;
-        font-size: 0.9rem;
-    }
-
-    .content.article {
-        text-align: center;
-    }
-
-    .content {
-        flex-direction: column;
-    }
-
-    .skills {
-        text-align: center;
-    }
-}
